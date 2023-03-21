@@ -92,6 +92,32 @@
                 </div>
             </div>
 
+            <div class="d-flex justify-content-center">
+                <div class="form-floating mb-3 mt-5 col-md-6">
+                    <label for="">Tỉnh/thành phố:</label>
+                    <select name="location" id="location" class="mb-5 ">
+                        <option value="ho-chi-minh">TP. Hồ Chí Minh</option>
+                        <option value="ha-noi">Hà Nội</option>
+                        <option value="can-tho">Cần Thơ</option>
+                        <option value="da-nang">Đà Nẵng</option>
+                        <option value="hue">Huế</option>
+                        <option value="lam-dong">Lâm Đồng</option>
+                        <option value="dong-nai">Đồng Nai</option>
+                        <option value="binh-thuan">Bình Thuận</option>
+                        <option value="ninh-thuan">Ninh Thuận</option>
+                        <option value="khanh-hoa">Khánh Hòa</option>
+                        <option value="thanh-hoa">Thanh Hóa</option>
+                        <option value="nghe-an">Nghệ An</option>
+                        <option value="thai-binh">Thái Bình</option>
+                        <option value="quang-binh">Quảng Nam</option>
+                        <option value="ha-tinh">Hà Tĩnh</option>
+                        <option value="long-an">Long An</option>
+                        <option value="tay-ninh">Tây Ninh</option>
+                        <option value="lao-cai">Lào Cai</option>
+                        <option value="others">--- Khác ---</option>
+                    </select>
+                </div>
+            </div>
 
             <div>
                 <input class="btn btn-lg btn-primary mt-3 text-center" type="submit" value="Đăng ký">
