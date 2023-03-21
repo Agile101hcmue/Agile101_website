@@ -1,4 +1,47 @@
+<?php
+    session_start();
 
+    include('connectdb.php');
+    include('functiondb.php');
+
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        $user_name = $_POST['user_name'];
+        $password = $_POST['password'];
+
+        if(!empty($user_name) && !empty($password) && !is_numeric($user_name)){
+            //
+            $query = "select * from users where user_name = '$user_name' limit 1";
+
+            $result = mysqli_query($con, $query);
+
+            if($result){
+                if($result && mysqli_num_rows($result) > 0){
+                    $user_data = mysqli_fetch_assoc($result);
+                    
+                    if($user_data['password'] === $password){
+                        $_SESSION['user_id'] = $user_data['user_id'];
+
+                        header("Location: cart/cart.php");
+                        // Nếu đăng nhập thành công thì dẫn đến trang quản lý danh sách tất cả các sản phẩm:./cart/cart.php 
+                        die;
+                    }
+                }
+            }
+            echo '<script type="text/javascript">
+                    window.onload = function(){
+                        alert("Bạn nhập sai thông tin đăng nhập. Vui lòng nhập lại!");
+                    }
+                </script>';
+                
+        }else{
+            echo '<script type="text/javascript">
+                    window.onload = function(){
+                        alert("Vui lòng nhập đầy đủ thông tin đăng nhập!");
+                    }
+                </script>';
+        }
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
