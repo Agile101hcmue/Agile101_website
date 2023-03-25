@@ -42,6 +42,7 @@
             else{
                 echo '<strong> Xin chào, ';
                 echo $user_data['user_name'];
+                // fixed
                 echo '</strong>';
                 echo '<a href="./components/logout.php"><input type="button" class="btn btn-outline-primary me-2 ms-3" value="Đăng xuất"></a>';
             }
