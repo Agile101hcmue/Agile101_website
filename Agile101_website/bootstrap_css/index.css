@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Play:wght@700&family=Poppins&family=Roboto+Slab:wght@600&family=Rowdies&display=swap');
+
+.text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rowdies', cursive;
+}
