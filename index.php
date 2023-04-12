@@ -23,14 +23,7 @@
 </head>
 <body>
     <?php include("./header.php"); ?>
-    <!-- body down from here -->
-    <!-- vùng 1: xem trong file planning_readme.md -->
-    <!-- <div class="mt-5 mb-5" align="center">
-        <h1>Chào mừng</h1>
-        <span>Cửa hàng Agile101 mang đến nguồn tri thức dành riêng cho bạn</span>
-    </div> -->
-    <!-- vùng 2: xem trong file planning_readme.md -->
-    
+
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -92,15 +85,15 @@
                     <h2 class="display-5">Sách thiếu nhi</h2>
                     <p class="lead">Gồm các đầu sách cho trẻ em.</p>
                 </div>
-                    <button class="btn btn-light"><a href="./components/cart/cart.php" class="text-dark">Truy cập</a></button>
+                    <button class="btn btn-light"><a href="./components/products/sachThieuNhi.php" class="text-dark">Truy cập</a></button>
                 </div>
                 <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 p-3">
-                    <h2 class="display-5">Sách giáo khoa</h2>
+                    <h2 class="display-5">Sách giáo dục</h2>
                     <p class="lead">Gồm các đầu sách phục vụ việc dạy học.</p>
                 </div>
                     <div class="bg-transparent shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                        <button class="btn btn-secondary"><a href="./components/cart/cart.php" class="text-light">Truy cập</a></button>
+                        <button class="btn btn-secondary"><a href="./components/products/sachGiaoDuc.php" class="text-light">Truy cập</a></button>
                     </div>
                 </div>
             </div>
@@ -108,19 +101,19 @@
             <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
                 <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 p-3">
-                    <h2 class="display-5">Sách abc</h2>
-                    <p class="lead">Gồm các đầu sách về abc xyz.</p>
+                    <h2 class="display-5">Sách đời sống</h2>
+                    <p class="lead">Gồm các đầu sách về hướng dẫn, mẹo vặt,...</p>
                 </div>
                 <div class="bg-tranparent shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                    <button class="btn btn-secondary"><a href="./components/cart/cart.php" class="text-light">Truy cập</a></button> 
+                    <button class="btn btn-secondary"><a href="./components/products/sachDoiSong.php" class="text-light">Truy cập</a></button> 
                 </div>
                 </div>
                 <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div class="my-3 py-3">
-                    <h2 class="display-5">Sách xyz</h2>
-                    <p class="lead">Gồm các đầu sách về xyz abc.</p>
+                    <h2 class="display-5">Sách Truyện</h2>
+                    <p class="lead">Gồm các đầu sách về phim, truyện, tranh ảnh, tác phẩm lịch sử,..</p>
                 </div>
-                    <button class="btn btn-light"><a href="./components/cart/cart.php" class="text-dark">Truy cập</a></button>
+                    <button class="btn btn-light"><a href="./components/products/sachTruyen.php" class="text-dark">Truy cập</a></button>
                 </div>
             </div>
     </div>
@@ -128,11 +121,11 @@
     <div align="center" class="mt-5">
       <div class="col-md-6">
         <div class="h-100 p-5 bg-light border rounded-3">
-          <h2 class="mb-4">Hãy là 1 phần của chúng tôi</h2>
+          <h2 class="mb-4">Khuyến mãi</h2>
           <img src="./assets/banner1.jpg" alt="" class="img-fluid rounded mx-auto d-block">
-          <p class="mt-4">Bạn chưa là thành viên của Agile101 ?.</p>
+          <p class="mt-4">Áp dụng đến dd/mm/yyyy.</p>
           <a href="./components/signup.php">
-            <button class="btn btn-outline-secondary" type="button">Đăng ký ngay</button>
+            <button class="btn btn-outline-secondary" type="button">Săn ngay</button>
           </a>
         </div>
       </div>
