@@ -51,13 +51,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/loginStyle.css">
     <title>Đăng nhập vào hệ thống</title>
+    <!-- <link rel="stylesheet" href="../css/login-form.css"> -->
     <link rel="stylesheet" href="../bootstrap_css/all.min.css">
     <link rel="stylesheet" href="../bootstrap_css/bootstrap.min.css">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="../bootstrap_css/all.min.css">
+    <!-- customize css -->
     <link rel="stylesheet" href="./css/login-form.css">
+
+    <!-- jquery -->
     <script src="../js/jquery.min.js"></script>
+    <!-- bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/popper.min.js"></script>
+    <!-- fontawesome -->
     <script src="../js/all.min.js"></script>
 </head>
 <body>

@@ -22,9 +22,7 @@
             header("Location: login.php");
             die;
         }else{
-            echo "<script>
-                    window.alert('Vui lòng nhập các thông tin!')
-                </script>";
+            echo "Please enter some value";
         }
     }
 
@@ -40,12 +38,17 @@
     <title>Đăng ký tài khoản mới</title>
     <link rel="stylesheet" href="../bootstrap_css/login-form.css">
     <link rel="stylesheet" href="../bootstrap_css/bootstrap.min.css">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="../bootstrap_css/all.min.css">
     <!-- customize css -->
     <link rel="stylesheet" href="../bootstrap_css/index.css">
+
+    <!-- jquery -->
     <script src="../js/jquery.min.js"></script>
+    <!-- bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/popper.min.js"></script>
+    <!-- fontawesome -->
     <script src="../js/all.min.js"></script>
 </head>
 <body>
@@ -76,7 +79,7 @@
                     <select name="gender" id="gender" class="mb-5 ">
                         <option value="male">Nam</option>
                         <option value="female">Nữ</option>
-                        <option value="unknown">Tôi không muốn cung cấp</option>
+                        <option value="unknown">Tôi không muốn khai báo</option>
                     </select>
                 </div>
             </div>
@@ -111,9 +114,6 @@
                         <option value="long-an">Long An</option>
                         <option value="tay-ninh">Tây Ninh</option>
                         <option value="lao-cai">Lào Cai</option>
-                        <option value="lao-cai">Phú Yên</option>
-                        <option value="lao-cai">Hậu Giang</option>
-                        <option value="lao-cai">Lạng Sơn</option>
                         <option value="others">--- Khác ---</option>
                     </select>
                 </div>
