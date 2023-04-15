@@ -11,11 +11,12 @@
 
     <div class="col mb-3">
       <h5>Liên hệ với chúng tôi</h5>
+      <?php $domain = "http://127.0.0.1/Agile101_admin"; ?>
       <ul class="nav flex-column">
         <li class="nav-item mb-2"><a href="https://www.facebook.com/nguyentuanhung12345" class="nav-link p-0 text-muted">Facebook</a></li>
         <li class="nav-item mb-2"><a href="mailto:tungng14@gmail.com" class="nav-link p-0 text-muted">E-mail</a></li>
         <li class="nav-item mb-2"><a href="https://www.github.com/TrHgTung" class="nav-link p-0 text-muted">Github</a></li>
-        <li class="nav-item mb-2"><a href="./components/privacy.php" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+        <li class="nav-item mb-2"><a href="<?php echo $domain; ?>/documents/privacy.php" class="nav-link p-0 text-muted">Privacy Policy</a></li>
       </ul>
     </div>
 

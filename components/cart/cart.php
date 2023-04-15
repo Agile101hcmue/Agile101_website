@@ -41,7 +41,7 @@
             //         Tuyệt vời, bạn đã đăng nhập thành công
             //     </span>';
             // include html link page, not rendering
-            include_once("main.php"); // display main.php
+            include("main.php"); // display main.php
         }
     
 ?>
