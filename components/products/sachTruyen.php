@@ -239,7 +239,7 @@
                             echo "<p class='lead '>".$user_data['user_name']."</p>";
                             echo "<p class='lead'>".$fetch['price']."</p>";
                             echo "<p class='lead'>".$fetch['quantity']."</p>";
-                            $domain_admin = "http://127.0.0.1/Agile101_admin";
+                            $domain_admin = "http://127.0.0.1/e_commerce_admin";
                             // echo $domain_admin."/cache/uploads/".$fetch['image'];
                             // echo 
                             echo "<img src=".$domain_admin."/cache/uploads/".$fetch['image']." width=40% height=50% ><br>";

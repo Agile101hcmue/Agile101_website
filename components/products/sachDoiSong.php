@@ -239,7 +239,7 @@
                             // echo "<p class='lead '>".$user_data['user_name']."</p>";
                             echo "<p class='lead mt-4'>Giá khuyến mãi: ".$fetch['price']." VND</p>";
                             echo "<p class='lead'>Số lượng có sẵn: ".$fetch['quantity']." quyển</p>";
-                            $domain_admin = "http://127.0.0.1/Agile101_admin";
+                            $domain_admin = "http://127.0.0.1/e_commerce_admin";
                             
                             // echo $domain_admin."/cache/uploads/".$fetch['image'];
                             // echo 
