@@ -63,6 +63,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap_css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap_css/bootstrap.min.css">
+    <script src="./bootstrap_js/all.min.js"></script>
+    <script src="./bootstrap_js/bootstrap.min.js"></script>
+    <script src="./bootstrap_js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap_css/index.css">
+    <link rel="stylesheet" href="./AlertifyJS/themes/alertify.css">
+    <link rel="stylesheet" href="./AlertifyJS/themes/alertify.min.css">
+    <script src="./AlertifyJS/alertify.js"></script>
+    <script src="./AlertifyJS/alertify.min.js"></script>
+    <link rel="stylesheet" href="./font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div align='center'>
@@ -93,24 +104,17 @@
             if(mysqli_num_rows($all_product) > 0){
                 while($fetch = mysqli_fetch_assoc($all_product)){
                     echo "<div align='center'>";
-                    echo "<div class=' w-100 my-md-3 ps-md-3'>";
-                    echo "<div class='text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden'>";
-                    echo "<div class='my-3 py-3'>";
-                    // echo "<tr><td>".$row["id"]."</td></tr>".$row["name"]."</td></tr>".$row["price"]."</td></tr>".$row["image"]."</td></tr>".$row["quantity"]."</td></tr>"
-                    echo "<h2 class='display-5' name='productname'>".$fetch['product_name'] ."</h2>";
-                    // echo "<p class='lead '>".$user_data['user_name']."</p>";
-                    echo "<p class='lead' name='price'>".$fetch['price']."</p>";
+                    echo "<div class='col p-4 d-flex flex-column position-static'>";
+                    echo "<strong class='d-inline-block mb-2 text-primary'>ID: ".$fetch['id']."</strong>";
+                    echo "<h3 class='mb-0'>Tên sản phẩm: ".$fetch['product_name']."</h3>";
+                    echo "<div class='mb-1 text-body-secondary'>Trạng thái: Còn hàng</div>";
+                    echo "<div class='mb-1 text-body-secondary'>Chi tiết: ".$fetch['description']."</div>";
+                    echo "<p class='lead' name='price'>Giá thanh toán: <strong>".$fetch['price']." VND</strong> </p>";
                     // echo "<p class='lead' name='quantity'>".$fetch['quantity']."</p>";
                     $domain_admin = "http://127.0.0.1/e_commerce_admin";
-                    // echo $domain_admin."/cache/uploads/".$fetch['image'];
-                    // echo 
-                    // echo "<img src=".$domain_admin."/cache/uploads/".$fetch['image']." width=40% height=50% ><br>";
-                    echo "</div>";
-                    echo "<form method='POST' enctype='multipart/form-data'>";
-                    echo "<div>";
                     echo "<a href='../payment/payment.php'><input type='button' class='btn btn-primary mt-4 mb-5' name='GetPayment' value='Thanh toán'></a>";
                     echo "</div>";
-                    echo "</form>";
+                   
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";
@@ -120,5 +124,13 @@
             }
         ?>
     </div>
+    <div align="center">
+        <p class="mb-3 mt-5"><b>Tổng sản phẩm: 2 (20.000 VND)</b></p><br>
+        <button class="btn btn-warning"><a href="../payment/payment.php">Thanh toán tất cả</a></button>
+    </div>
+
+    <footer>
+        <?php include("../../footer.php"); ?>
+    </footer>
 </body>
 </html>
