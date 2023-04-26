@@ -235,18 +235,20 @@
                             echo "<div class='text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden'>";
                             echo "<div class='my-3 py-3'>";
                             // echo "<tr><td>".$row["id"]."</td></tr>".$row["name"]."</td></tr>".$row["price"]."</td></tr>".$row["image"]."</td></tr>".$row["quantity"]."</td></tr>"
-                            echo "<h2 class='display-5'>".$fetch['name'] ."</h2>";
-                            echo "<p class='lead '>".$user_data['user_name']."</p>";
-                            echo "<p class='lead'>".$fetch['price']."</p>";
-                            echo "<p class='lead'>".$fetch['quantity']."</p>";
+                            echo "<h2 class='display-5' name='productname'>".$fetch['name'] ."</h2>";
+                            // echo "<p class='lead '>".$user_data['user_name']."</p>";
+                            echo "<p class='lead' name='price'>".$fetch['price']."</p>";
+                            echo "<p class='lead' name='quantity'>".$fetch['quantity']."</p>";
                             $domain_admin = "http://127.0.0.1/e_commerce_admin";
                             // echo $domain_admin."/cache/uploads/".$fetch['image'];
                             // echo 
                             echo "<img src=".$domain_admin."/cache/uploads/".$fetch['image']." width=40% height=50% ><br>";
                             echo "</div>";
+                            echo "<form method='POST' enctype='multipart/form-data'>";
                             echo "<div>";
-                            echo "<input type='button' class='btn btn-primary mt-4 mb-5' value='Thêm vào giỏ hàng'>";
+                            echo "<a href='../cart/cart.php'><input type='button' class='btn btn-primary mt-4 mb-5' name='AddToCart' value='Thêm vào giỏ hàng'></a>";
                             echo "</div>";
+                            echo "</form>";
                             echo "</div>";
                             echo "</div>";
                             echo "</div>";
@@ -254,6 +256,7 @@
                     }else{
                         echo "No result!!";
                     }
+                    // include('../cart/cart.php');
 
                 ?>
                     
