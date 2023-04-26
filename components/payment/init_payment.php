@@ -80,7 +80,7 @@ if (!empty($_POST)) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>MoMo Sandbox</title>
+    <title>Thanh toán với MoMo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"/>
     <link rel="stylesheet"
           href="./statics/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
@@ -97,16 +97,16 @@ if (!empty($_POST)) {
     <script src="../../AlertifyJS/alertify.min.js"></script>
     <link rel="stylesheet" href="./font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<header>
+<body align="center">
+<header >
     <?php include("../../header.php"); ?>
 </header>
-<div class="container py-4">
-    <div class="row">
+<div class="container py-4" >
+    <div class="row" align="center">
         <div class="col-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Initial payment/Khởi tạo thanh toán</h3>
+                    <h3 class="panel-title">Khởi tạo thanh toán</h3>
                 </div>
                 <div class="panel-body">
                     <form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
@@ -200,7 +200,7 @@ if (!empty($_POST)) {
 
                         <p>
                         <div style="margin-top: 1em;">
-                            <button type="submit" class="btn btn-primary btn-block">Start MoMo payment....</button>
+                            <button type="submit" class="btn btn-primary btn-block">Thanh Toán</button>
                         </div>
                         </p>
                     </form>
