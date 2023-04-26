@@ -49,23 +49,37 @@ if (!empty($_GET)) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>MoMo Sandbox</title>
+    <title>Kết quả Thanh toán MoMo</title>
     <script type="text/javascript" src="./statics/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="./statics/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="./statics/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript"
             src="./statics/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../bootstrap_css/all.min.css">
+    <link rel="stylesheet" href="../../bootstrap_css/bootstrap.min.css">
+    <script src="../../bootstrap_js/all.min.js"></script>
+    <script src="../../bootstrap_js/bootstrap.min.js"></script>
+    <script src="../../bootstrap_js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap_css/index.css">
+    <link rel="stylesheet" href="../../AlertifyJS/themes/alertify.css">
+    <link rel="stylesheet" href="../../AlertifyJS/themes/alertify.min.css">
+    <script src="../../AlertifyJS/alertify.js"></script>
+    <script src="../../AlertifyJS/alertify.min.js"></script>
+    <link rel="stylesheet" href="./font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"
           href="./statics/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
 </head>
 <body>
-<div class="container">
+    <header>
+        <?php include("../../header.php"); ?>
+    </header>
+<div class="container py-3">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h1 class="panel-title">Payment status/Kết quả thanh toán</h1>
+                    <h1 class="panel-title">Agile101 - Kết quả thanh toán</h1>
                 </div>
                 <div class="panel-body">
                     <div class="row">
@@ -192,7 +206,7 @@ if (!empty($_GET)) {
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <a href="/" class="btn btn-primary">Back to continue payment...</a>
+                                <a href="/" class="btn btn-primary">Quay về thanh toán...</a>
                             </div>
                         </div>
                     </div>
@@ -227,5 +241,8 @@ if (!empty($_GET)) {
             </div>
         </div>
     </div>
+    <footer>
+        <?php include("../../footer.php"); ?>
+    </footer>
 </body>
 </html>

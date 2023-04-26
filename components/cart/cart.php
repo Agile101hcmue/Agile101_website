@@ -112,7 +112,7 @@
                     echo "<p class='lead' name='price'>Giá thanh toán: <strong>".$fetch['price']." VND</strong> </p>";
                     // echo "<p class='lead' name='quantity'>".$fetch['quantity']."</p>";
                     $domain_admin = "http://127.0.0.1/e_commerce_admin";
-                    echo "<a href='../payment/payment.php'><input type='button' class='btn btn-primary mt-4 mb-5' name='GetPayment' value='Thanh toán'></a>";
+                    echo "<a href='../payment/init_payment.php'><input type='button' class='btn btn-primary mt-4 mb-5' name='GetPayment' value='Thanh toán'></a>";
                     echo "</div>";
                    
                     echo "</div>";
@@ -126,7 +126,7 @@
     </div>
     <div align="center">
         <p class="mb-3 mt-5"><b>Tổng sản phẩm: 2 (20.000 VND)</b></p><br>
-        <button class="btn btn-warning"><a href="../payment/payment.php">Thanh toán tất cả</a></button>
+        <button class="btn btn-warning"><a href="../payment/init_payment.php">Thanh toán tất cả</a></button>
     </div>
 
     <footer>
