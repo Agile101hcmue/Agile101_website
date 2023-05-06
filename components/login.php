@@ -9,7 +9,6 @@
         $password = $_POST['password'];
 
         if(!empty($user_name) && !empty($password) && !is_numeric($user_name)){
-            //
             $query = "select * from users where user_name = '$user_name' limit 1";
 
             $result = mysqli_query($con, $query);
@@ -22,7 +21,6 @@
                         $_SESSION['user_id'] = $user_data['user_id'];
 
                         header("Location: cart/cart.php");
-                        // Nếu đăng nhập thành công thì dẫn đến trang quản lý danh sách tất cả các sản phẩm:./cart/cart.php 
                         die;
                     }
                 }
@@ -55,7 +53,7 @@
     <link rel="stylesheet" href="../bootstrap_css/bootstrap.min.css">
     <link rel="stylesheet" href="../bootstrap_css/all.min.css">
     <link rel="stylesheet" href="./css/login-form.css">
-    <script src="../js/jquery.min.js"></script>
+
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/all.min.js"></script>
