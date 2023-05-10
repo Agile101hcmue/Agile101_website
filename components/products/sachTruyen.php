@@ -12,11 +12,6 @@
     <title>Agile101 · Sách Thiếu Nhi</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
-
-
-
-
-
     <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
@@ -109,8 +104,6 @@
         }
     </style>
 
-
-    <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
 </head>
 
@@ -210,10 +203,6 @@
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
 
-        <!-- product 1 (on first)  -->
-        <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 py-3"> -->
                 <?php
                     // session_start();
                     // include("./check_auth_management.php");

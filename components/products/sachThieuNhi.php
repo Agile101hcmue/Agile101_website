@@ -110,7 +110,6 @@
     </style>
 
 
-    <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
 </head>
 
@@ -210,17 +209,9 @@
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
 
-        <!-- product 1 (on first)  -->
-        <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 py-3"> -->
                 <?php
-                    // session_start();
-                    // include("./check_auth_management.php");
                     $user_data = check_login($con);
                     include("./connection.php");
-                    // $sql = "select * from product where category = 'sach-thieu-nhi' ";
-                    // $all_product = $con->query($sql);
                     $query = "select distinct * from `product` where category='sach-thieu-nhi' order by id DESC ";
                     // $result = mysqli_query($conn, $query);
                     $all_product = mysqli_query($con, $query);
@@ -256,62 +247,10 @@
                     }else{
                         echo "No result!!";
                     }
-                    // include('../cart/cart.php');
 
                 ?>
                     
-                    <!-- <p class="lead">And an even wittier subheading.</p> -->
-                
-                <!-- <div>
-                    <input type="button" class="btn btn-primary mt-4 mb-5" value="Thêm vào giỏ hàng">
-                </div>
-            </div> -->
-            <!-- <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
-                </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                </div>
-            </div> -->
-        </div>
-<!-- product 2  -->
-        <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 py-3">
-                <?php
-                    // session_start();
-                    // include("./check_auth_management.php");
-                    // $user_data = check_login($con);
-                    // include("./connection.php");
-                    // // $sql = "select * from product where category = 'sach-thieu-nhi' ";
-                    // // $all_product = $con->query($sql);
-                    // $query = "select distinct * from `product` where category='sach-doi-song'  order by id DESC ";
-                    // // $result = mysqli_query($conn, $query);
-                    // $all_product = mysqli_query($con, $query);
-                    // $fetch_src = FETCH_SRC;
-                    // $domain = DOMAIN;
-                    // $request_to_items = null; // please make a request to view items details here
-                    // $i =1;
-                    // if(mysqli_num_rows($all_product) > 0){
-                    //     while($fetch = mysqli_fetch_assoc($all_product)){
-                    //         // echo "<tr><td>".$row["id"]."</td></tr>".$row["name"]."</td></tr>".$row["price"]."</td></tr>".$row["image"]."</td></tr>".$row["quantity"]."</td></tr>"
-                    //         echo "<h2 class='display-5'>".$fetch['name'] ."</h2>";
-                    //         echo "<p class='lead '>".$user_data['user_name']."</p>";
-                    //         echo "<p class='lead'>".$fetch['price']."</p>";
-                    //         echo "<p class='lead'>".$fetch['quantity']."</p>";
-                    //         $domain_admin = "http://127.0.0.1/e_commerce_admin";
-                    //         // echo $domain_admin."/cache/uploads/".$fetch['image'];
-                    //         // echo 
-                    //         echo "<img src=".$domain_admin."/cache/uploads/".$fetch['image']." width=80% height=300px ><br>";
-                    //         echo "</div>";
-                    //     }
-                    // }else{
-                    //     echo "No result!!";
-                    // }
-
-                ?>
-                    
+        </div>                    
                     <p class="lead">And an even wittier subheading.</p>
                 
                 <div>
@@ -326,64 +265,9 @@
                 <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
                 </div>
             </div>
-        </div> -->
-
-        <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-            <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
-                </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                </div>
-            </div>
-            <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
-                </div>
-                <div class="bg-body-tertiary shadow-sm mx-auto"
-                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-            </div>
         </div>
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-            <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
-                </div>
-                <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                </div>
-            </div>
-            <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
-                </div>
-                <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                </div>
-            </div>
-        </div>
-
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-            <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
-                </div>
-                <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                </div>
-            </div>
-            <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
-                </div>
-                <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                </div>
-            </div>
-        </div> -->
+   
     </main>
 
     <footer class="container py-5">

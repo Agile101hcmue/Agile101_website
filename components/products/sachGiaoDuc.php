@@ -14,9 +14,6 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
 
 
-
-
-
     <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
@@ -108,9 +105,6 @@
             z-index: 1500;
         }
     </style>
-
-
-    <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
 </head>
 
@@ -210,17 +204,9 @@
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
 
-        <!-- product 1 (on first)  -->
-        <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 py-3"> -->
                 <?php
-                    // session_start();
-                    // include("./check_auth_management.php");
                     $user_data = check_login($con);
                     include("./connection.php");
-                    // $sql = "select * from product where category = 'sach-thieu-nhi' ";
-                    // $all_product = $con->query($sql);
                     $query = "select distinct * from `product` where category='sach-giao-duc' order by id DESC ";
                     // $result = mysqli_query($conn, $query);
                     $all_product = mysqli_query($con, $query);
@@ -234,14 +220,11 @@
                             echo "<div class=' w-100 my-md-3 ps-md-3'>";
                             echo "<div class='text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden'>";
                             echo "<div class='my-3 py-3'>";
-                            // echo "<tr><td>".$row["id"]."</td></tr>".$row["name"]."</td></tr>".$row["price"]."</td></tr>".$row["image"]."</td></tr>".$row["quantity"]."</td></tr>"
                             echo "<h2 class='display-5'>".$fetch['name'] ."</h2>";
                             echo "<p class='lead '>".$user_data['user_name']."</p>";
                             echo "<p class='lead'>".$fetch['price']."</p>";
                             echo "<p class='lead'>".$fetch['quantity']."</p>";
                             $domain_admin = "http://127.0.0.1/e_commerce_admin";
-                            // echo $domain_admin."/cache/uploads/".$fetch['image'];
-                            // echo 
                             echo "<img src=".$domain_admin."/cache/uploads/".$fetch['image']." width=40% height=50% ><br>";
                             echo "</div>";
                             echo "<div>";

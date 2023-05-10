@@ -13,10 +13,8 @@
         $location = $_POST['location'];
 
         if(!empty($user_name) && !empty($password) && !is_numeric($user_name)){
-            //
             $user_id = random_num(20);
             $query = "insert into users (user_id,user_name,password,gender,birthyear,location) values ('$user_id','$user_name','$password','$gender','$birthyear','$location')";
-
             mysqli_query($con, $query);
 
             header("Location: login.php");
@@ -38,17 +36,11 @@
     <title>Đăng ký tài khoản mới</title>
     <link rel="stylesheet" href="../bootstrap_css/login-form.css">
     <link rel="stylesheet" href="../bootstrap_css/bootstrap.min.css">
-    <!-- fontawesome -->
     <link rel="stylesheet" href="../bootstrap_css/all.min.css">
-    <!-- customize css -->
     <link rel="stylesheet" href="../bootstrap_css/index.css">
 
-    <!-- jquery -->
-    <script src="../js/jquery.min.js"></script>
-    <!-- bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/popper.min.js"></script>
-    <!-- fontawesome -->
     <script src="../js/all.min.js"></script>
 </head>
 <body>
